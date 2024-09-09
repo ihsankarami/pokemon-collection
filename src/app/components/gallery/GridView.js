@@ -46,8 +46,9 @@ export default function GridView() {
   return (
     <>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 py-5">
-        {filteredList.map((pokemon) => (
+        {filteredList.map((pokemon, id) => (
           <div
+            key={id}
             className="w-full max-w-sm mx-auto rounded-md shadow-md overflow-hidden bg-white cursor-pointer hover:bg-red-500"
             onClick={() => handleClickedCard(pokemon)}
           >

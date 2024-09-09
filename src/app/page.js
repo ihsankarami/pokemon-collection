@@ -152,7 +152,7 @@ export default function Home() {
                 Let the fun begin!
               </h1>
               <h4 className="p-2 text-center max-w-xs md:text-xl text-gray-700 lg:text-left lg:ml-[-5px] lg:mt-4 lg:text-2xl">
-                Explore the World of Pokémon: Catch 'Em All!
+                Explore the World of Pokémon: Catch Em All!
               </h4>
             </motion.div>
             <motion.img

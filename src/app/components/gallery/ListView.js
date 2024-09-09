@@ -31,8 +31,11 @@ export default function ListView() {
   return (
     <>
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
-        {filteredList.map((pokemon) => (
-          <div className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        {filteredList.map((pokemon, id) => (
+          <div
+            key={id}
+            className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+          >
             <div className="">
               <>
                 <div className="p-2">
